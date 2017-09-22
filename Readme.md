@@ -14,6 +14,9 @@ All projects under the OONI umbrella should follow [semantic
 versioning](http://semver.org/), this means the version string should follow
 the pattern `MAJOR.MINOR.PATCH` (or `MAJOR.MINOR.PATCH-(beta|alpha|rc)(.N)(+BUILD_ID)`)
 
+`BUILD_ID`, when optionally specified (for example on mobile platforms), should always be increasing.
+That is to say `∀ BUILD_ID (BUILD_ID(n) > BUILD_ID(n-1))`.
+
 Example of good version numbers:
 
 ```
