@@ -12,7 +12,7 @@ we document the style we follow for each language.
 
 All projects under the OONI umbrella should follow [semantic
 versioning](http://semver.org/), this means the version string should follow
-the pattern `MAJOR.MINOR.PATCH` (or `MAJOR.MINOR.PATCH-(beta|alpha|rc).N`)
+the pattern `MAJOR.MINOR.PATCH` (or `MAJOR.MINOR.PATCH-(beta|alpha|rc)(.N)(+BUILD_ID)`)
 
 Example of good version numbers:
 
@@ -20,7 +20,7 @@ Example of good version numbers:
 1.1.2
 3.2.0-rc.0
 1.34.22-beta.36
-
+2.0.0-rc.1+233
 ```
 
 Example of **BAD** version numbers:
@@ -31,7 +31,7 @@ Example of **BAD** version numbers:
 1.2.1.beta
 2-beta.3
 3.2.1-rc-1
-
+3.3.3.3
 ```
 
 ### Tagging
@@ -44,6 +44,8 @@ labeled `v2.8.1`.
 
 If you are making an alpha, beta or release candiate be sure to always include
 the `-rc.1` or `-beta.1` suffix.
+
+If you are on mobile be sure to append the build ID to the tag using the format `+N`.
 
 The message (or annotation) for the tag should be in the format:
 
@@ -147,6 +149,10 @@ The sections can be omitted if nothing relevant is to be included in them.
 
 When you make a binary release be sure to always include the version number in
 the filename you upload.
+
+If you are uploading a release to test flight or other distribution channels, you
+must create a tag before doing so. Every release pushed to any distribution channel
+must have a corresponding git tag.
 
 If you are making a beta or unstable release, be sure to comunicate this
 adequately when you distribute it.
