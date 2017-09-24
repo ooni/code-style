@@ -42,7 +42,8 @@ Example of **BAD** version numbers:
 When tagging a release all you have to do is call the tag with the version
 number with a leading `v`.
 
-Tags should be created using the command:
+Tags must not be created from GitHub, since it's important that they are signed.
+This is the command you can use:
 
 ```
 git tag -s -a v$MAJOR.$MINOR.$PATH
