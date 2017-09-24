@@ -42,6 +42,12 @@ Example of **BAD** version numbers:
 When tagging a release all you have to do is call the tag with the version
 number with a leading `v`.
 
+Tags should be created using the command:
+
+```
+git tag -s -a v$MAJOR.$MINOR.$PATH
+```
+
 For example if the version number of the software is `2.8.1`, the tag will be
 labeled `v2.8.1`.
 
