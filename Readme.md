@@ -205,6 +205,6 @@ Refer to [Effective Go](https://golang.org/doc/effective_go.html). `go fmt` and 
 
 ### C++
 
-Refer to [coding-style in measurement-kit](https://github.com/measurement-kit/measurement-kit/blob/master/doc/coding-style.md)
+Refer to [CONTRIBUTING.md in measurement-kit](https://github.com/measurement-kit/measurement-kit/blob/master/CONTRIBUTING.md)
 
 
