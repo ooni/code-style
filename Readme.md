@@ -199,6 +199,8 @@ repository](https://github.com/TheTorProject/ooni-probe/blob/master/docs/coding-
 
 We follow [Javascript Standard Style](https://standardjs.com/)
 
+For React, we follow: [Airbnb React/JSX Style Guide](https://github.com/airbnb/javascript/blob/master/react/README.md), except we don't name files with the `.jsx` extension.
+
 ### Golang
 
 Refer to [Effective Go](https://golang.org/doc/effective_go.html). `go fmt` and `go lint` will also be of help.
